@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	<body>
+		<div class="load">
+			<img src="img/1478829240_827121.png" />
+			<br />
+			<input type="button" name="begin" id="begin" value="" />
+			<br />
+			<input type="button" name="help" id="help" value="" />
+			<div class="help">
+				<h3>简介：</h3>
+				<p>五子棋是世界智力运动会竞技项目之一，是一种两人对弈的纯策略型棋类游戏，是世界智力运动会竞技项目之一，通常双方分别使用黑白两色的棋子，下在棋盘直线与横线的交叉点上，先形成5子连线者获胜。</p>
+				<h3>规则：</h3>
+				<p>(1)对局双方各执一色棋子。<br /> (2)空棋盘开局。<br /> (3)黑先、白后，交替下子，每次只能下一子。 <br />(4)棋子下在棋盘的空白点上，棋子下定后，不得向其它点移动，不得从棋盘上拿掉或拿起另落别处。 <br />(5)黑方的第一枚棋子可下在棋盘任意交叉点上。
+				</p>
+			</div>
+		</div>
+		<canvas id="canvas" width="600" height="600"></canvas>
+		<audio src="loop.wav" id="audio"></audio>
+		<audio src="aa.mp3" id="audiotwo" loop=""></audio>
+		<div class="juan">
+			<img src="img/1478829240_827121.png" />
+		</div>
+		<div class="text">
+			<h3>-- 黑方 --
+				<img src="img/jiantou.png" class="f-img"/>
+			</h3>
+			<p>用时：
+				<span class="first">00:00</span>
+			</p>
+			<h3>-- 白方 --
+				<img src="img/jiantou.png" class="s-img"/>	
+			</h3>
+			<p>用时：
+				<span class="secend">00:00</span>
+			</p>
+			<div style="position: relative;">
+				<canvas id="clock" width="200" height="200"></canvas>
+				<input type="button" id="re" value="重新开始" />
+				<input type="button" id="sz" value="查看棋谱" />
+				<div id="chms">玩家1 VS 玩家2</div>
+				<div class="chose">
+					<div id="people" class="active">玩家1 VS 玩家2</div>
+					<div id="ai">玩家 VS 电脑</div>
+				</div>
+			</div>
+		</div>
+		<div class="sure">
+			<h3>你确定重新开始吗？？？</h3>
+			<input type="button" name="no" id="no" value="否" />
+			<input type="button" name="yes" id="yes" value="是" />
+		</div>
+		<div class="manual">
+			<div class="close"> 关闭</div>
+		</div>
+		<div class="end">
+			<div class="end-text">
+				<h3>黑方胜</h3>
+				<div id="look">查看对局</div>
+				<div id="again">再来一局</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
